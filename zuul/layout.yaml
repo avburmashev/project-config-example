@@ -5,7 +5,7 @@ includes:
 pipelines:
   - name: check
     description: Newly uploaded patchsets enter this pipeline to receive an initial +/-1 Verified vote from Jenkins.
-    failure-message: "Build failed.  To recheck use 'myvendor: recheck'.  For 3rd party ci contact info: https://wiki.openstack.org/wiki/ThirdPartySystems"
+    failure-message: "Build failed.  To recheck use 'Oracle: recheck'.  For 3rd party ci contact info: https://wiki.openstack.org/wiki/ThirdPartySystems"
     manager: IndependentPipelineManager
     trigger:
       gerrit:
@@ -25,7 +25,7 @@ pipelines:
     merge-failure:
       smtp:
         #TODO: Update these to real e-mail addresses
-        to: third_party_ci@example.com
+        to: alex.burmashev@gmail.com
         from: zuul@example.com
         subject: Upstream change {change} has a merge failure
 
